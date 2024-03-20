@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('background.jpeg');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image in the viewport */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* The background image will not scroll with the content */
+    
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px; /* Adjust this value to match the height of your header */
+    padding: 10px;
+}
+
+.text-container {
+    flex: 1;
+    text-align: center;
+    max-width: 400px; /* Adjust as necessary */
+}
+
+.image-container {
+    display: flex; /* Establishes a flex container */
+    justify-content: center; /* Centers children on the main axis (horizontal) */
+    align-items: center; /* Centers children on the cross axis (vertical) */
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 9em;
+    margin-bottom: 0.3em;
+}
+
+h2 {
+    color: white;
+    font-size: 4.5em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    color: white;
+}
+/* Set the text color to white for table data */
+table, th, td {
+    color: white;
+}
+
+/* Set the text color to white for list items */
+ul {
+    color: white;
+}
+
+/* Set the text color to white for list items inside .skill-category */
+.skill-category ul {
+    color: white;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+footer {
+    background-color: #333; /* Or any color you prefer */
+    color: #fff; /* This is white text color */
+    padding: 20px; /* This gives padding inside the footer */
+    text-align: center; /* Centers the text inside the footer */
+    font-size: 0.8em; /* Adjust the font size as necessary */
+    position: relative; /* If you want to use position */
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    margin: auto;
+    /* Additional styling if you need to center the footer content vertically */
+}
+
+
+
+@media (max-width: 768px) {
+    .intro-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-container {
+        order: 2; /* Ensures the text comes after the image on smaller screens */
+    }
+
+    .image-container,
+    .text-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .profile-pic {
+        max-width: 300px; /* Adjust to maintain a reasonable size on smaller screens */
+        height: auto;
+        margin: 20px auto; /* Adds margin at the top and bottom, centers the image horizontally */
+    }
+
+    header {
+        position: relative;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header nav ul li a {
+        padding: 10px 15px;
+    }
+
+    .btn {
+        width: auto; /* Adjusts the width of the button to fit content */
+        margin: 20px auto; /* Centers the button */
+    }
+
+    footer {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+}
+
+
